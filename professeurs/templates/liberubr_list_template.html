@@ -1,0 +1,86 @@
+
+{% include 'base.html' %}
+{% include 'navigation.html' %}
+{% load i18n %}
+
+
+{% block content %}
+   
+<style>
+    .form-special input, .form-special select {
+        border-radius: 7px;
+        padding: 8px;
+        appearance: auto;
+    }
+</style>
+
+
+<section class="px-0 row-center form-special">
+    <div class="container bg-light border" style="border-color: rgb(48, 73, 186); border-radius: 12px; padding: 5px;">
+        <h1 class="text-center pb-4 pt-4"> {% trans "Fiche de paie des professeurs de Ministre de l'enseignemnt" %} </h1>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th> {% trans "Liste des Libélé Rubriques" %} </th>
+                                <th> {% trans "Code Rubrique" %} </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% if liberubr_coderubr_list %}
+                                {% for liberubr, coderubr in liberubr_coderubr_list %}
+                                    <tr>
+                                        <td>{{ liberubr }}</td>
+                                        <td>{{ coderubr }}</td>
+                                    </tr>
+                                {% endfor %}
+                            {% endif %}
+                        </tbody>
+                    </table>
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th> {% trans "Libélé de chaque Rubriques" %} </th>
+                                <th> {% trans "Montant" %} </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% if liberubr_montoctr_list %}
+                                {% for liberubr, montoctr in liberubr_montoctr_list %}
+                                    <tr>
+                                        <td>{{ liberubr }}</td>
+                                        <td>{{ montoctr }}</td>
+                                    </tr>
+                                {% endfor %}
+                            {% endif %}
+                        </tbody>
+                    </table>
+                    <div class="form-group pt-4 pb-2">
+                        <div class="text-center">
+                            <button id="generate-pdf-button" class="btn btn-info mr-3"> {% trans "Generer PDF" %} </a></button>
+                            <button type="submit" class="btn btn-info"><a href="{% url 'selected-data' %} " class="text-reset"> {% trans "Estimer Encore Une fois" %} </a></button>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<script>
+    document.getElementById('generate-pdf-button').addEventListener('click', function () {
+        // Redirect the user to the generate-pdf view to initiate PDF generation
+        window.location.href = "{% url 'generate_pdf' %}";
+    });
+</script>
+
+
+{% endblock content %}
+{% include 'footer.html' %}
+
+

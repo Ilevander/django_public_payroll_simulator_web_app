@@ -1,0 +1,98 @@
+{% include 'base.html' %}
+{% include 'navigation.html' %}
+
+{% block content %}
+<div>
+    <div class="container">
+    <div class="border-bottom border-dark py-7">
+      <p class="text-dark text-center fs-1">Blog</p>
+      <h1 class="text-center fs-lg-7 fs-md-4 fs-3 text-dark mb-5">Thoughts and words</h1>
+      <div class="row align-items-center gx-xl-7">
+          {% load static %}
+        <div class="col-lg-6 text-center"><a href="#"><img class="img-fluid" src="{% static 'assets/img/blog/loi.jpg' %}" alt="" /></a></div>
+        <div class="col-lg-6 mt-5 mt-lg-0 text-center text-lg-start">
+          <div class="row justify-content-md-center">
+                <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-3"><a href="#section2">
+                  <p class="fw-bold mb-0 text-black ">Code Générale des Impôt</p>
+                </a>
+                <p class="mb-0 mx-auto" style="width: 200px;">(CGI 2022)</p>
+              </div><a href="#">
+              <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-3"><a href="#section2">
+                    <p class="fw-bold mb-0 text-black row justify-content-md-center">Projet de Loi de Finance</p>
+                  </a>
+                  <p class="mb-0 mx-auto" style="width: 200px;"> (PLF 2023)</p>
+              </div><a href="#section2">
+          </div>
+            <h1 class="fs-xl-2 fs-md-4 fs-3 my-3 text-reset">Le Secrétariat Général du Gouvernement est chargé d’assurer le parcours des projets de textes juridiques, en vérifiant leur conformité avec les dispositions constitutionnelles, leur compatibilité avec les textes législatifs et réglementaires en vigueur. Il assure également leur traduction en langue française et leur publication au bulletin Officiel.</h1>
+          </a>
+          <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-2"><img class="img-fluid" src="{% static 'assets/img/blog/drap.png' %}" alt="" /><a href="#section2">
+              <p class="mb-0">Loi juridique maroccaine</p>
+            </a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- end of .container-->
+
+ 
+  
+  <section class="py-0 pt-0 pb-3" style="background-color: aliceblue;" id="section2">
+
+    <div class="container">
+      <h1 class="fs-lg-6 fs-md-5 fs-3 text-center"><br>Légalisation</h1>
+      <div class="row mt-5 gx-xl-7">
+        <div class="col-lg-4 col-md-6 mb-5 mb-md-0 text-center text-md-start h-auto">
+          <div class="d-flex justify-content-between flex-column h-100"><a href="#"><img class="w-md-100 w-75 rounded-2" src="{% static 'assets/img/blog/1.png' %}" alt="" /></a>
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 mt-3"><a href="#">
+                <p class="fw-bold mb-0 text-black">Date d'effet du</p>
+              </a>
+              <p class="mb-0">01/01/1990</p><p class="fw-bold mb-0 text-black">à ce jour</p>
+            </div><a href="#">
+              <h5 class="mt-1 mb-3 fs-0 fs-md-1">Pitch termsheet backing validation focus release.</h5>
+            </a>
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-3 mb-md-5"><img class="img-fluid" src="{% static 'assets/img/blog/profile1.png' %}" alt="" /><a href="#">
+                <p class="mb-0 text-gray">Chandler Bing</p>
+              </a></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5 mb-md-0 text-center text-md-start h-auto">
+          <div class="d-flex justify-content-between flex-column h-100"><a href="#"><img class="w-md-100 w-75 rounded-2" src="{% static 'assets/img/blog/2.png' %}" alt="" /></a>
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 mt-3"><a href="#">
+                <p class="fw-bold mb-0 text-black">Champ d'application</p>
+              </a>
+              <p class="mb-0">November 22, 2021</p>
+            </div><a href="#">
+              <h5 class="mt-1 mb-3 fs-0 fs-md-1">Conformément aux dispositions du CGI cité en référence, notamment les articles 21 , 22 et 23 , les personnes physiques titulaire de revenus salariaux de source marocaine et assimilés,ayant sont assujettis à l'impôt sur les Revenu (IR)</h5>
+            </a>
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-3 mb-md-5"><img class="img-fluid" src="{% static 'assets/img/blog/profile2.png' %}" alt="" /><a href="#">
+                <p class="mb-0 text-gray">Rachel Green</p>
+              </a></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5 mb-md-0 text-center text-md-start h-auto">
+          <div class="d-flex justify-content-between flex-column h-100"><a href="#"><img class="w-md-100 w-75 rounded-2" src="{% static 'assets/img/blog/3.png' %}"  alt="" /></a>
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 mt-3"><a href="#">
+                <p class="fw-bold mb-0 text-black">Assiette</p>
+              </a>
+              <p class="mb-0">November 22, 2021</p>
+            </div><a href="#">
+              <h5 class="mt-1 mb-3 fs-0 fs-md-1">En application des articles 56,57,58 et 59 du CGI, l'assistance de cotisation fait référence au revenu global net d'impôt,qui est définit comme suit : <a class="text-reset" href="{% url 'texte' %}">Clicker ici</a></h5>
+            </a>
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-3 mb-md-5"><img class="img-fluid" src="{% static 'assets/img/blog/profile3.png' %}" alt="" /><a href="#">
+                <p class="mb-0 text-gray">Monica Geller</p>
+              </a></div>
+          </div>
+        </div>
+       
+          <div class="text-center mb-4">
+             <button class="btn btn-outline-dark">Load More</button>
+          </div>
+    </div>
+</section>
+
+</main>
+
+</section>
+{% endblock %}
+{% include 'footer.html' %}

@@ -1,0 +1,268 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-26 10:20+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\professeurs\templates\base_generic.html:72
+#: .\professeurs\templates\selected_data_template.html:23
+msgid "Simulateur de la paie"
+msgstr ""
+
+#: .\professeurs\templates\home.html:12
+msgid ""
+"Economiser votre temps par le rapide simulateur de la paie des "
+"fonctionnaires publiques"
+msgstr ""
+
+#: .\professeurs\templates\home.html:13
+msgid ""
+"Notre simulateur de la paie vous offre une simulation exacte de la paie de "
+"vos salaire autant que des fonctionnaire de la ministre de l'enseignement "
+"supérieur et la recheche et l'innovation"
+msgstr ""
+
+#: .\professeurs\templates\home.html:14
+msgid "Visitez notre site officiel"
+msgstr ""
+
+#: .\professeurs\templates\home.html:15
+msgid "Explorer l'ANRT"
+msgstr ""
+
+#: .\professeurs\templates\home.html:41
+msgid "Nos Services"
+msgstr ""
+
+#: .\professeurs\templates\home.html:42
+msgid "Découvrez les services de notre système"
+msgstr ""
+
+#: .\professeurs\templates\home.html:45
+msgid "Obtenez votre fiche de paie en format souhaitée"
+msgstr ""
+
+#: .\professeurs\templates\home.html:46
+msgid ""
+"Obtenez votre votre fiche de paie en pdf et imprimez là en toute rapidité"
+msgstr ""
+
+#: .\professeurs\templates\home.html:46 .\professeurs\templates\home.html:50
+#: .\professeurs\templates\home.html:54
+msgid "Explarer la page"
+msgstr ""
+
+#: .\professeurs\templates\home.html:49
+#: .\professeurs\templates\navigation.html:24
+msgid "Simulation de la paie"
+msgstr ""
+
+#: .\professeurs\templates\home.html:50
+msgid ""
+"Etes vous un personnel de ministre de l'enseignement supérieur ? Défnissez "
+"votre corp et lancez vous pour la simulation exacte de votre salaire autant "
+"qu'un fonctionnaire de l'état."
+msgstr ""
+
+#: .\professeurs\templates\home.html:53
+msgid "Régularisation juridique"
+msgstr ""
+
+#: .\professeurs\templates\home.html:54
+msgid ""
+"Notre algorithm de calcule respècte bien la démocratisation de la loi "
+"marocaine de code de travail selon le Code Générale des Impôt (CGI 2022) et "
+"projet de Loi de Finance (PLF 2023)."
+msgstr ""
+
+#: .\professeurs\templates\home.html:67 .\professeurs\templates\home.html:149
+msgid ""
+"Nous mettons nos clients en contact avec les meilleurs et les aidons à "
+"suivre le rythme et à rester ouverts."
+msgstr ""
+
+#: .\professeurs\templates\home.html:69
+msgid "Nous connectons nos clients avec les meilleurs."
+msgstr ""
+
+#: .\professeurs\templates\home.html:70
+msgid "Soirée de lancement client du succès du conseiller."
+msgstr ""
+
+#: .\professeurs\templates\home.html:71
+msgid "Longue traîne entreprise-consommateur."
+msgstr ""
+
+#: .\professeurs\templates\home.html:73
+msgid "Commencer maintenant"
+msgstr ""
+
+#: .\professeurs\templates\home.html:84
+msgid "Puissance de notre système"
+msgstr ""
+
+#: .\professeurs\templates\home.html:86
+msgid "Rapidité de navigation sans beugs."
+msgstr ""
+
+#: .\professeurs\templates\home.html:87
+msgid "Reception des nouvelles fonctionnaitées par mail."
+msgstr ""
+
+#: .\professeurs\templates\home.html:88
+msgid "Diverts paramètres."
+msgstr ""
+
+#: .\professeurs\templates\home.html:99
+msgid "Nos recommendations et retours positives"
+msgstr ""
+
+#: .\professeurs\templates\home.html:106
+msgid ""
+"“Je suis extrêmement impressionné par le travail exceptionnel de l'équipe de "
+"développement informatique.”"
+msgstr ""
+
+#: .\professeurs\templates\home.html:116
+msgid ""
+"“Nous ne pourrions être plus satisfaits des résultats obtenus grâce au "
+"système informatique développé pour nous. ”"
+msgstr ""
+
+#: .\professeurs\templates\home.html:126
+msgid ""
+"“Le nouveau système informatique a été une révolution pour notre entreprise. "
+"La manière dont il rationalise nos processus internes.”"
+msgstr ""
+
+#: .\professeurs\templates\home.html:155
+msgid "Nous connectons nos clients avec les meilleurs ?"
+msgstr ""
+
+#: .\professeurs\templates\home.html:159 .\professeurs\templates\home.html:168
+msgid ""
+"Contenu d'espace réservé pour cet accordéon, destiné à démontrer la classe "
+"accordéon-flush. Il s'agit du corps d'accordéon du premier article."
+msgstr ""
+
+#: .\professeurs\templates\home.html:164
+msgid "Une rockstar de la recherche et du développement Android ?"
+msgstr ""
+
+#: .\professeurs\templates\home.html:179
+msgid "Nos valeurs"
+msgstr ""
+
+#: .\professeurs\templates\home.html:180
+msgid ""
+"Nos valeurs autant que des full-stacks developpers ou software engineers"
+msgstr ""
+
+#: .\professeurs\templates\home.html:184
+msgid "Innovation"
+msgstr ""
+
+#: .\professeurs\templates\home.html:187
+msgid ""
+"L'innovation est souvent une valeur clé dans le domaine du développement "
+"informatique. Les entreprises axées sur l'innovation encouragent leurs "
+"équipes à rechercher de nouvelles idées, à explorer de nouvelles "
+"technologies et à trouver des solutions novatrices aux problèmes."
+msgstr ""
+
+#: .\professeurs\templates\home.html:192
+msgid "Qualité"
+msgstr ""
+
+#: .\professeurs\templates\home.html:195
+msgid ""
+"La qualité est essentielle dans le développement informatique pour assurer "
+"que les logiciels et les applications créés répondent aux normes élevées de "
+"performance, de fiabilité et de sécurité."
+msgstr ""
+
+#: .\professeurs\templates\home.html:200
+msgid "Collaboration"
+msgstr ""
+
+#: .\professeurs\templates\home.html:203
+msgid ""
+"La collaboration est cruciale dans un domaine aussi interconnecté que le "
+"développement informatique. Les entreprises qui encouragent la collaboration "
+"créent un environnement où les équipes travaillent ensemble de manière "
+"transparente."
+msgstr ""
+
+#: .\professeurs\templates\home.html:208
+msgid "Charger plus"
+msgstr ""
+
+#: .\professeurs\templates\liberubr_list_template.html:20
+msgid "Fiche de paie des professeurs de Ministre de l'enseignemnt"
+msgstr ""
+
+#: .\professeurs\templates\liberubr_list_template.html:27
+msgid "Liste des Libélé Rubriques"
+msgstr ""
+
+#: .\professeurs\templates\liberubr_list_template.html:28
+msgid "Code Rubrique"
+msgstr ""
+
+#: .\professeurs\templates\liberubr_list_template.html:46
+msgid "Libélé de chaque Rubriques"
+msgstr ""
+
+#: .\professeurs\templates\liberubr_list_template.html:47
+msgid "Montant"
+msgstr ""
+
+#: .\professeurs\templates\liberubr_list_template.html:63
+msgid "Estimer Encore Une fois"
+msgstr ""
+
+#: .\professeurs\templates\navigation.html:21
+msgid "Acceuil"
+msgstr ""
+
+#: .\professeurs\templates\navigation.html:22
+msgid "Propos"
+msgstr ""
+
+#: .\professeurs\templates\navigation.html:23
+msgid "Référence Réglementaire"
+msgstr ""
+
+#: .\professeurs\templates\navigation.html:26
+msgid "Profile"
+msgstr ""
+
+#: .\professeurs\templates\navigation.html:27
+msgid "Déconexion"
+msgstr ""
+
+#: .\professeurs\templates\navigation.html:29
+msgid "Connexion"
+msgstr ""
+
+#: .\professeurs\templates\navigation.html:30
+msgid "S'inscrire "
+msgstr ""
+
+#: .\professeurs\templates\selected_data_template.html:74
+msgid "Estimer"
+msgstr ""

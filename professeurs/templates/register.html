@@ -1,0 +1,52 @@
+{% include 'base.html' %}
+{% include 'navigation.html' %}
+
+<style>
+    .mydivstyle:hover {
+       box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+       transform: translateY(-20px) ;
+    }
+</style>
+
+{% load crispy_forms_tags %}
+{% block content %}
+<section class=" px-0 row-center form-special">
+    <div class="container bg-light" style="border: 2px solid rgb(48, 73, 186);
+    border-radius: 12px;
+    padding: 5px;">
+           <h1 class="text-center pb-3 pt-3">Registration</h1>
+ <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">   
+            <form class="well form-horizontal px-5 pb-5" action="" method="POST" id="contact_form">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                      <!-- Button -->
+                    <div class="form-group">
+                        <div class="text-center"><br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit"
+                                class="btn btn-info">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Register <span
+                                    class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+                        </div>
+                    </div>
+               </form>
+               <!--Message from  backend-->
+               {% for message in messages %}
+                    {% if message.tags == 'success' %}
+                        <div class="alert alert-success d-flex align-items-center" role="alert">{{message}}
+                            <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                                <a href="{% url 'home' %}" type="button" class="btn btn-close" data-bs-dismiss="alert" aria-label="Close"></a>
+                        </div>
+                    {% endif %}  
+               {% endfor %}
+       </div>
+         <div class="col-lg-6 pt-7">
+            {% load static %}
+            <img class="img-fluid" src="{% static 'assets/img/blog/1.png' %}" alt="Image" class="img-fluid">
+        </div>
+    </div>
+ </div>         
+</div><!-- /.container -->
+</section>
+{% endblock content %}
+{% include 'footer.html' %}

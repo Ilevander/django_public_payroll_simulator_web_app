@@ -1,0 +1,53 @@
+{% include 'base.html' %}
+{% include 'navigation.html' %}
+
+
+{% block content %}
+   
+<!--link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"-->
+<!--link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"-->
+
+<style>
+    .form-special input, .form-special select {
+        border-radius: 7px;
+        padding: 8px;
+        appearance: auto;
+    }
+</style>
+
+   <section class=" px-0 row-center form-special">
+        <div class="container bg-light" style="border: 2px solid rgb(48, 73, 186);
+        border-radius: 12px;
+        padding: 5px;">
+               <h1 class="text-center pb-3 pt-3">Résultats de Simulation</h1>
+     <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">   
+                    <table>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Traitement de base</th>
+                            <th>Indemnité de résidence</th>
+                            <!-- Ajoutez d'autres en-têtes pour les autres résultats de calcul -->
+                        </tr>
+                        {% for professeur in professeurs %}
+                        <tr>
+                            <td>{{ professeur.name }}</td>
+                            <td>{{ professeur.traitement_base_calcul }}</td>
+                            <td>{{ professeur.indemnite_residence_calcul }}</td>
+                            <!-- Affichez les autres résultats de calcul pour chaque professeur -->
+                        </tr>
+                        {% endfor %}
+                    </table>
+           </div>
+             <div class="col-lg-6 pt-7">
+                {% load static %}
+                <img class="img-fluid" src="{% static 'assets/img/blog/3.png' %}" alt="Image" class="img-fluid">
+            </div>
+        </div>
+     </div>         
+    </div><!-- /.container -->
+   </section>
+  
+{% endblock content %}
+{% include 'footer.html' %}

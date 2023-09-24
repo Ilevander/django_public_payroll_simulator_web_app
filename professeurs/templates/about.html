@@ -1,0 +1,107 @@
+{% include 'base.html' %}
+{% include 'navigation.html' %}
+
+
+{% block content %}
+<!-- ============================================-->
+<!-- =============<section> begin ===============-->
+        <section class="bg-dark text-center py-9">
+         
+          <div class="container">
+            <p class="text-light fs-1">About</p>
+            <div class="col-12 col-md-7 mx-auto">
+              <h1 class="text-white fs-lg-7 fs-md-4 fs-3 my-4">Nous cherchon toujours à vous créer une solution qui répond à vos besoin</h1>
+            </div>
+            <p class="w-md-50 text-light mx-auto">Chez nous, chaque client est une priorité inestimable. Votre satisfaction et vos besoins sont au cœur de tout ce que nous faisons. Votre confiance en notre entreprise nous inspire à continuellement nous améliorer et à vous offrir des solutions exceptionnelles qui répondent parfaitement à vos attentes</p>
+          </div>
+          <!-- end of .container-->
+  
+        </section>
+        
+      <section class="pb-0 bg-light">
+  
+          <div class="container">
+            <div class="gallery-wraper">
+              {% load static %}
+              <div class="img-wraper"><img class="img-fluid" src="{% static 'assets/img/gallery/1.png' %}" alt="" /></div>
+              <div class="img-wraper"><img class="img-fluid" src="{% static 'assets/img/gallery/2.png' %}" alt="" /></div>
+              <div class="img-wraper"><img class="img-fluid" src="{% static 'assets/img/gallery/3.png' %}" alt="" /></div>
+              <div class="img-wraper"><img class="img-fluid" src="{% static 'assets/img/gallery/4.png' %}" alt="" /></div>
+              <div class="img-wraper"><img class="img-fluid" src="{% static 'assets/img/gallery/5.png' %}" alt="" /></div>
+            </div>
+            
+            <div class="px-xl-8 px-md-5 px-3 py-8">
+              <i class="bi bi-patch-question-fill"></i><p class="fs-1">question</p>
+              <h1 class="fs-lg-6 fs-md-4 fs-3 my-4">Pourquoi créer un simulateur de la paie</h1>
+              <p class="fs-1">La solution de simulation de la paie offre des avantages indéniables aux corps qui ont besoin de cette information pour leur gestion ou leur organisation. En effet, la simulation est un moyen de prévoir les montants à payer d’une part, et les résultats de la simulation constituent des outils de prise de décision à ne pas négliger d’autre part.
+              </p>
+            </div>
+          </div>
+      </section>
+        
+        <section class="bg-dark">
+  
+          <div class="container">
+            <p class="text-center text-light">Nos statistique</p>
+            <h1 class="text-center text-white w-lg-75 mx-auto fs-xl-6 fs-lg-4 fs-3">Découvrez les statistique de notre platforme</h1>
+            <div class="row mt-5">
+              <div class="col-md-4 col-sm-6 text-center">
+                <h1 class="text-success fs-5 fs-md-6 fs-lg-7 fs-xl-9">120M</h1>
+                <p class="text-light fs-2">Utilisateurs</p>
+              </div>
+              <div class="col-md-4 col-sm-6 text-center">
+                <h1 class="text-success fs-5 fs-md-6 fs-lg-7 fs-xl-9">10.000</h1>
+                <p class="text-light fs-2">Retour positive</p>
+              </div>
+              <div class="col-md-4 col-sm-6 text-center">
+                <h1 class="text-success fs-5 fs-md-6 fs-lg-7 fs-xl-9">76%</h1>
+                <p class="text-light fs-2">Prodéctivité</p>
+              </div>
+            </div>
+          </div>
+          <!-- end of .container-->
+  
+        </section>
+        
+        <section class="bg-light">
+  
+          <div class="container">
+            <div class="px-xl-8 px-md-5 px-3">
+              <p class="text-reset fs-1">Nos valeurs</p>
+              <h1 class="text-dark fs-lg-6 fs-md-4 fs-3 my-lg-4 my-3">Things in we believe</h1>
+              <p class="text-reset w-lg-75 fs-1">
+                L'Innovation représnete une poursuite de nouvelles idées et technologies pour des solutions informatiques modernes.
+                Ainsi que la Qualité est une adhésion à des normes élevées pour des logiciels fiables et performants.
+                Note Collaboration est le travail d'équipe pour résoudre les défis et offrir des solutions efficaces.</p>
+              <div class="row mt-5">
+                <div class="col-md-3"><img class="img-fluid" src="{% static 'assets/img/values/1.png' %}" alt="" /></div>
+                <div class="col-md-9 mt-2 mb-md-0">
+                  <h1 class="text-dark fs-2 fs-lg-3 my-2">Innovation</h1>
+                  <p class="text-reset fs-1">L'innovation est souvent une valeur clé dans le domaine du développement informatique. Les entreprises axées sur l'innovation encouragent leurs équipes à rechercher de nouvelles idées, à explorer de nouvelles technologies et à trouver des solutions novatrices aux problèmes. 
+                   </p>
+                </div>
+              </div>
+              <div class="row mt-5">
+                <div class="col-md-3"><img class="img-fluid" src="{% static 'assets/img/values/2.png' %}" alt="" /></div>
+                <div class="col-md-9 mt-2 mb-md-0">
+                  <h1 class="text-dark fs-2 fs-lg-3 my-2">Qualité</h1>
+                  <p class="text-reset fs-1">La qualité est essentielle dans le développement informatique pour assurer que les logiciels et les applications créés répondent aux normes élevées de performance, de fiabilité et de sécurité. 
+                    </p>
+                </div>
+              </div>
+              <div class="row mt-5">
+                <div class="col-md-3"><img class="img-fluid" src="{% static 'assets/img/values/3.png' %}" alt="" /></div>
+                <div class="col-md-9 mt-2 mb-md-0">
+                  <h1 class="text-dark fs-2 fs-lg-3 my-2">Collaboration</h1>
+                  <p class="text-reset fs-1">La collaboration est cruciale dans un domaine aussi interconnecté que le développement informatique. Les entreprises qui encouragent la collaboration créent un environnement où les équipes travaillent ensemble de manière transparente.</p>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </section>
+
+      </main>
+      
+      
+{% endblock content %}
+{% include 'footer.html' %}

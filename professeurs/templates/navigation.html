@@ -1,0 +1,79 @@
+
+{% load static %}
+{% load i18n %}
+<style>
+  .rounded-circle {
+    width: 40px; /* Set the width and height to your desired circle size */
+    height: 40px;
+    text-align: center; /* Center the content horizontally */
+    padding: 0; /* Remove any padding to fully utilize the circle dimensions */
+    line-height: 40px; /* Center the content vertically */
+}
+</style>
+<main class="main" id="top">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark" data-navbar-on-scroll="data-navbar-on-scroll">
+    
+  
+    <div class="container"><div class="container-md ms-2"><a class="navbar-brand me-1" href="{% url 'home' %}"><img src="{% static 'assets/img/4.png' %}" alt="" class="mx-auto"/>   Simulateur de la paie</a></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-bars text-white fs-3"></i></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="{% url 'home' %}"> {% trans "Acceuil" %} </a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="{% url 'about' %}"> {% trans "Propos" %} </a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="{% url 'blogs' %}"> {% trans "Référence Réglementaire" %} </a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="{% url 'selected-data' %}"> {% trans "Simulation de la paie" %} </a></li>
+              {% if request.user.is_authenticated %}
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="{% url 'accounts:profile' %}"> {% trans "Profile" %} </a></li>
+              <li class="nav-item"><a class="nav-link btn btn-light text-black w-md-25 w-50 w-lg-100 " aria-current="page" href="{% url 'logout' %}"> {% trans "Déconexion" %} </a></li>
+                 {% else %}
+                 <li class="nav-item"><a class="nav-link btn btn-light text-black w-md-25 w-50 w-lg-100 " aria-current="page" href="{% url 'login' %}"> {% trans "Connexion" %} </a></li>
+                 <li class="nav-item"><a class="nav-link btn btn-light text-black w-md-25 w-50 w-lg-100 ms-2" aria-current="page" href="{% url 'accounts:signup' %}"> {% trans "S'inscrire " %}</a></li>
+              {% endif %}
+             <!--Lang-->
+           <!-- <div class="btn-group ms-3">
+                  <button type="button" class="btn btn-info rounded-circle"><i class="bi bi-translate"></i></button>
+                  <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split rounded-circle" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+            </div>
+            -->
+            <i class="nav-item ms-3">
+              <div class="container mt-0 nav-link btn btn-light text-black w-md-25 w-100 w-lg-100 p-2 h-10">
+                  <form action="{% url 'set_language' %}" method="post" class="ms-3">
+                      {% csrf_token %}
+                      <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}">
+                      <div class="row align-items-center g-1">
+                          <div class="col-7">
+                              <select name="language" class="form-select form-select-sm nav-link btn btn-light text-black w-md-25 w-50 w-lg-100" style="height: 1px;">
+                                  {% get_current_language as LANGUAGE_CODE %}
+                                  {% get_available_languages as LANGUAGES %}
+                                  {% get_language_info_list for LANGUAGES as languages %}
+                                  {% for language in languages %}
+                                      <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                                          {{ language.name_local }} ({{ language.code }})
+                                      </option>
+                                  {% endfor %}
+                              </select>
+                          </div>
+                          <div class="col-5 text-end">
+                              <button type="submit" class="btn btn-primary btn-sm px-2"><i class="bi bi-translate"></i></button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </i>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="bg-dark"><img class="img-fluid position-absolute end-0" src="{% static 'assets/img/hero/hero-bg.png' %}" alt="" />
+  
+  

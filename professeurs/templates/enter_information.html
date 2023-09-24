@@ -1,0 +1,15 @@
+{% include 'base.html' %}
+{% include 'navigation.html' %}
+
+
+{% block content %}
+
+    <h1>Enter Information</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit">
+    </form>
+    
+{% endblock content %}
+{% include 'footer.html' %}

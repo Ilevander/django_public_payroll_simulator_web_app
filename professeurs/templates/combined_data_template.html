@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Data</title>
+</head>
+<body>
+    <h1>Combined Data</h1>
+
+    {% for entry in combined_data %}
+        <h2>Coderubr: {{ entry.coderubr }}, Liberubr: {{ entry.liberubr }}, Idengrad: {{ entry.idengrad }}</h2>
+        <p>Total Montoctr: {{ entry.total_montoctr }}</p>
+
+        <table border="1">
+            <tr>
+                <th>Idendroi</th>
+                <th>Idengrad</th>
+                <th>Idencomb</th>
+                <th>Codfamgr</th>
+                <th>Echelon</th>
+                <th>Idendepa</th>
+                <th>Codezone</th>
+                <th>Coderubr</th>
+                <th>Liberubr</th>
+                <th>Montoctr</th>
+                <th>Typeoctr</th>
+                <th>Perioctr</th>
+            </tr>
+            {% for row in entry.related_rows %}
+                <tr>
+                    <td>{{ row.idendroi }}</td>
+                    <td>{{ row.idengrad }}</td>
+                    <td>{{ row.idencomb }}</td>
+                    <td>{{ row.codfamgr }}</td>
+                    <td>{{ row.echelon }}</td>
+                    <td>{{ row.idendepa }}</td>
+                    <td>{{ row.codezone }}</td>
+                    <td>{{ row.coderubr }}</td>
+                    <td>{{ row.liberubr }}</td>
+                    <td>{{ row.montoctr }}</td>
+                    <td>{{ row.typeoctr }}</td>
+                    <td>{{ row.perioctr }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+
+    {% endfor %}
+</body>
+</html>

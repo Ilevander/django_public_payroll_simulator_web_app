@@ -1,0 +1,51 @@
+
+{% load i18n %}
+
+<section class="px-0 row-center form-special">
+    <div class="container bg-light border" style="border-color: rgb(48, 73, 186); border-radius: 12px; padding: 5px;">
+        <h1 class="text-center pb-4 pt-4"> {% trans "Fiche de paie des professeurs de Ministre de l'enseignemnt" %} </h1>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="text-align: center;"> {% trans "Liste des Libélé Rubriques" %} </th>
+                                <th style="text-align: center;"> {% trans "Code Rubrique" %} </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% if liberubr_coderubr_list %}
+                                {% for liberubr, coderubr in liberubr_coderubr_list %}
+                                    <tr>
+                                        <td style="text-align: center;">{{ liberubr }}</td>
+                                        <td style="text-align: center;">{{ coderubr }}</td>
+                                    </tr>
+                                {% endfor %}
+                            {% endif %}
+                        </tbody>
+                    </table>
+                    
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="text-align: center;"> {% trans "Libélé de chaque Rubriques" %} </th>
+                                <th style="text-align: center;"> {% trans "Montant" %} </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% if liberubr_montoctr_list %}
+                                {% for liberubr, montoctr in liberubr_montoctr_list %}
+                                    <tr>
+                                        <td style="text-align: center;">{{ liberubr }}</td>
+                                        <td style="text-align: center;">{{ montoctr }}</td>
+                                    </tr>
+                                {% endfor %}
+                            {% endif %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
